@@ -303,7 +303,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/axon7/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/zte/axon7/proprietary/vendor/lib/libtsvideoprocess.so:system/vendor/lib/libtsvideoprocess.so \
     vendor/zte/axon7/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/zte/axon7/proprietary/vendor/lib/libZEffectLib.so:system/vendor/lib/libZEffectLib.so
+    vendor/zte/axon7/proprietary/vendor/lib/libZEffectLib.so:system/vendor/lib/libZEffectLib.so \
+    vendor/zte/axon7/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
