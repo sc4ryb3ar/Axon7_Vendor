@@ -30,15 +30,6 @@ function showCurrentConfig {
 
 showCurrentConfig
 
-# Pick the default thread count (allow overrides from the environment)
-if [ -z "$THREADS" ]; then
-        if [ "$(uname -s)" = 'Darwin' ]; then
-                export THREADS=$(sysctl -n machdep.cpu.core_count)
-        else
-                export THREADS=$(cat /proc/cpuinfo | grep '^processor' | wc -l)
-        fi
-fi
-
 # Setup build environment
 echo -e "${CLR_BLD_BLU}Setting up the build environment${CLR_RST}"
 echo -e ""
@@ -54,9 +45,9 @@ echo -e "${CLR_BLD_BLU}Starting compilation${CLR_RST}"
 
 if [ $MAKECLEAN -eq 1 ]
 then
-    make clean && brunch $ROMPREFIX_$DEVICECODENAME-userdebug -j"$((THREADS * 2+2))"
+    make clean && brunch $ROMPREFIX_$DEVICECODENAME-userdebug -j16
 else
-    make installclean && brunch $ROMPREFIX_$DEVICECODENAME-userdebug -j"$((THREADS * 2+2))"
+    make installclean && brunch $ROMPREFIX_$DEVICECODENAME-userdebug -j16
 fi
 
 # Check if the build failed
