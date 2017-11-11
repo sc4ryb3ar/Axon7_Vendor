@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <project name="sc4ryb3ar/Axon7_Device" path="device/zte/axon7" remote="github" revision="n-mr2" />
+  <project name="sc4ryb3ar/Axon7_Kernel" path="kernel/zte/msm8996" remote="github" revision="n-mr2" />
+  <project name="sc4ryb3ar/Axon7_Vendor" path="vendor/zte" remote="github" revision="n-mr2" />
+  <project name="PureFusionOS/android_device_qcom_common" path="device/qcom/common" remote="fusion" revision="n-mr2" />
+  <project name="android_device_voxpopuli" path="device/voxpopuli" remote="voxpopuli" revision="msm8996" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="github" revision="cm-14.1" />
+</manifest>
